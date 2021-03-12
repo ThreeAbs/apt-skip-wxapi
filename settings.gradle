@@ -1,0 +1,4 @@
+include ':lib-compiler'
+include ':lib-annotation'
+include ':app'
+rootProject.name = "apt-wxapi"
