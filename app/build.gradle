@@ -32,4 +32,5 @@ dependencies {
 
     api project(':lib-annotation')
     annotationProcessor project(':lib-compiler')
+   // implementation 'com.github.ThreeAbs:apt-skip-wxapi:1.0.0'
 }

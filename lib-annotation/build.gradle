@@ -1,5 +1,10 @@
 apply plugin: 'java-library'
 
+// JitPack Maven
+apply plugin: 'com.github.dcendents.android-maven'
+// Your Group
+group='com.threeabs.annotation'
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
