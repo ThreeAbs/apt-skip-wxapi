@@ -7,7 +7,7 @@ import com.threeabs.annotation.TargetTemplate;
  * Email: zhanghd@aura.cn
  * Describe:
  */
-@TargetTemplate(targetPath = "com.login", targetName = "WXEntryActivity", targetTemplate = WXLoginTemplate.class)
+@TargetTemplate(targetPath = "com.login.test", targetName = "WXEntryActivity", targetTemplate = WXLoginTemplate.class)
 public class WXLoginTemplate {
 
 }
