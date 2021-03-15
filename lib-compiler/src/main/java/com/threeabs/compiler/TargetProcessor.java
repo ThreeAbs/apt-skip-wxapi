@@ -9,6 +9,7 @@ import com.threeabs.annotation.TargetTemplate;
 
 import java.io.IOException;
 ;
+import java.io.Writer;
 import java.util.LinkedHashSet;
 
 import java.util.Set;
@@ -91,6 +92,24 @@ public class TargetProcessor extends AbstractProcessor {
                 e.printStackTrace();
             }
 
+
+//            Writer writer = null;
+//            try {
+//                writer = processingEnv
+//                        .getFiler()
+//                        .createSourceFile(targetName)
+//                        .openWriter()
+//                        .append("sadasdasdasdas");
+//            } catch (IOException e) {
+//                throw new RuntimeException("unable to create source file " + targetName, e);
+//            } finally {
+//                try {
+//                    if (writer != null) writer.close();
+//                } catch (IOException e) {
+//                }
+//            }
+//
+//
         }
         return false;
     }

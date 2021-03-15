@@ -30,10 +30,17 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 
-  //  api project(':lib-annotation')
-    annotationProcessor project(':lib-compiler')
+    //api project(':lib-annotation')
+  ///  annotationProcessor project(':lib-compiler')
 
 
-    api "com.github.ThreeAbs.apt-skip-wxapi:lib-annotation:1.0.4"
-   // annotationProcessor "com.github.ThreeAbs.apt-skip-wxapi:lib-compiler:1.0.4"
+    // api files('libs\\lib-annotation.jar')
+    // annotationProcessor files('libs\\lib-compiler.jar')
+
+
+    api "com.github.ThreeAbs.apt-skip-wxapi:lib-annotation:1.0.6"
+//
+//
+//
+    annotationProcessor "com.github.ThreeAbs.apt-skip-wxapi:lib-compiler:1.0.6"
 }
