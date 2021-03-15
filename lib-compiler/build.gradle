@@ -1,15 +1,15 @@
 apply plugin: 'java-library'
 apply plugin: 'com.github.dcendents.android-maven'
-group = 'com.threeabs.ThreeAbs'
+group = 'com.threeabs.compiler'
 
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-
+   // implementation project(path: ':lib-annotation')
+    implementation "com.github.ThreeAbs.apt-skip-wxapi:lib-annotation:1.0.4"
     implementation 'com.squareup:javapoet:1.10.0'
     //noinspection AnnotationProcessorOnCompilePath
     implementation 'com.google.auto.service:auto-service:1.0-rc4'
-    implementation project(path: ':lib-annotation')
     annotationProcessor 'com.google.auto.service:auto-service:1.0-rc4'
     tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
 }
