@@ -3,11 +3,12 @@ apply plugin: 'java-library'
 // JitPack Maven
 apply plugin: 'com.github.dcendents.android-maven'
 // Your Group
-group='com.threeabs.threeabs'
+group = 'com.threeabs.ThreeAbs'
 
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    // implementation "com.github.ThreeAbs.apt-skip-wxapi:lib-annotation:1.0.2"
     api project(":lib-annotation")
     api 'com.squareup:javapoet:1.10.0'
     //noinspection AnnotationProcessorOnCompilePath
@@ -16,5 +17,5 @@ dependencies {
     tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
 }
 
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"

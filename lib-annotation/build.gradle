@@ -3,12 +3,12 @@ apply plugin: 'java-library'
 // JitPack Maven
 apply plugin: 'com.github.dcendents.android-maven'
 // Your Group
-group='com.threeabs.threeabs'
+group='com.threeabs.ThreeAbs'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     tasks.withType(JavaCompile) { options.encoding = 'UTF-8' }
 }
 
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"
+sourceCompatibility = "1.8"
+targetCompatibility = "1.8"
