@@ -1,7 +1,6 @@
 package com.threeabs.compiler;
 
 
-import com.google.auto.service.AutoService;
 import com.squareup.javapoet.JavaFile;
 import com.squareup.javapoet.TypeName;
 import com.squareup.javapoet.TypeSpec;
@@ -24,7 +23,7 @@ import javax.lang.model.element.TypeElement;
 import javax.lang.model.type.MirroredTypeException;
 import javax.lang.model.type.TypeMirror;
 
-@AutoService(Processor.class)
+//@AutoService(Processor.class)
 public class TargetProcessor extends AbstractProcessor {
 
     @Override
@@ -92,24 +91,6 @@ public class TargetProcessor extends AbstractProcessor {
                 e.printStackTrace();
             }
 
-
-//            Writer writer = null;
-//            try {
-//                writer = processingEnv
-//                        .getFiler()
-//                        .createSourceFile(targetName)
-//                        .openWriter()
-//                        .append("sadasdasdasdas");
-//            } catch (IOException e) {
-//                throw new RuntimeException("unable to create source file " + targetName, e);
-//            } finally {
-//                try {
-//                    if (writer != null) writer.close();
-//                } catch (IOException e) {
-//                }
-//            }
-//
-//
         }
         return false;
     }
